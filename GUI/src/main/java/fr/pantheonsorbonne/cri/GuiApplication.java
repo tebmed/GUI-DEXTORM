@@ -2,12 +2,22 @@ package fr.pantheonsorbonne.cri;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class GuiApplication {
+public class GuiApplication extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
+	
+	
+	@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(GuiApplication.class);
+    }
+	public static void main(String[] args) throws Exception{
 		SpringApplication.run(GuiApplication.class, args);
 	}
+	  
 
+	
 }
