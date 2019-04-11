@@ -93,6 +93,14 @@
 		
 		<!--  grpc  -->
 		
+		
+        <!-- Github API -->	
+        <dependency>
+			<groupId>org.eclipse.mylyn.github</groupId>
+			<artifactId>org.eclipse.egit.github.core</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+       
    </dependencies>
    <build>
         <plugins>
@@ -140,8 +148,8 @@
 						  </resource>
 						</resources>
 					</configuration>
-				</execution>
-			</executions>
+				  </execution>
+			   </executions>
 		  </plugin>
         </plugins>
     </build>
